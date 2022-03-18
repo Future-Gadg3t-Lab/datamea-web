@@ -7,7 +7,7 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  height: 100vh;
+  min-height: 95vh;
   font-family: sans-serif;
 }
 
