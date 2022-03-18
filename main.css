@@ -9,9 +9,20 @@ body {
 	height: 100vh;
 	font-family: sans-serif;
 }
+
+.banner {
+	position: absolute;
+	top: 12px;
+	left: 32px;
+}
+
+.banner img {
+	height: 60px;
+}
+
 h1 {
 	color: #fff;
-	position relative;
+	position: relative;
 	font-size: 3vw;
 }
 h1::after {
