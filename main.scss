@@ -37,6 +37,19 @@ h1::after {
 p {
 	font-size: 2vw;
 	color: #b5b5b5;
+
+	span {
+		animation: fadeIn 1s ease-in-out infinite;
+		&:nth-of-type(1) {
+			animation-delay: .1s;
+		}
+		&:nth-of-type(2) {
+			animation-delay: .2s;
+		}
+		&:nth-of-type(3) {
+			animation-delay: .3s;
+		}
+	}
 }
 
 @keyframes fadeIn {

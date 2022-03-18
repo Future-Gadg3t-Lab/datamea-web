@@ -15,7 +15,7 @@
     </div>
 	<div>
 		<h1>Welcome to Datamea</h1>
-		<p>Coming Soon...</p>
+		<p>Coming Soon<span>.</span><span>.</span><span>.</span></p>
 	</div>
 </body>
 </html>
