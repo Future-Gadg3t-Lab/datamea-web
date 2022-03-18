@@ -1,0 +1,45 @@
+* {
+/*	border: 1px solid white;*/
+}
+
+body {
+	background: rgba(0, 0, 0, .9);
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	font-family: sans-serif;
+}
+
+.banner {
+	position: absolute;
+	top: 12px;
+	left: 32px;
+}
+
+.banner img {
+	height: 60px;
+}
+
+h1 {
+	color: #fff;
+	position: relative;
+	font-size: 3vw;
+}
+h1::after {
+	content: "";
+	position: absolute;
+	height:3vw;
+	width: 16px;
+	background: #fff;
+	animation: fadeIn 1s ease-in-out infinite;
+}
+
+p {
+	font-size: 2vw;
+	color: #b5b5b5;
+}
+
+@keyframes fadeIn {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
