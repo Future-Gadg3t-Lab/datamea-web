@@ -1,58 +1,96 @@
 * {
-/*	border: 1px solid white;*/
+	// outline: 1px solid red;
+}
+
+:root {
+	--clr-background-dark: rgba(0, 0, 0, .9);
+	--clr-background-light: #C4C4C4;
+	
+	--clr-font-dark: #FFF;
+	--clr-font-light: #2B2B2B;
 }
 
 body {
 	background: rgba(0, 0, 0, .9);
 	display: grid;
 	place-items: center;
-	min-height: 95vh;
 	font-family: sans-serif;
 }
 
-.banner {
-	position: absolute;
-	top: 12px;
-	left: 32px;
+.flex-cse {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
-.banner img {
-	height: 150px;
+.container, .alt {
+	border-radius: 10px;
 }
 
-h1 {
-	color: #fff;
-	position: relative;
-	font-size: 3vw;
-}
-h1::after {
-	content: "";
-	position: absolute;
-	height:3vw;
-	width: 16px;
-	background: #fff;
-	animation: fadeIn 2s ease-in-out infinite;
+.container {
+	background-color: var(--clr-background-light);
+	color: var(--clr-font-dark);
+	padding: 32px;
 }
 
-p {
-	font-size: 2vw;
-	color: #b5b5b5;
+.alt {
+	background-color: var(--clr-background-dark);
+	color: var(--clr-font-dark);
+	min-height: 57vh;
+}
 
-	span {
-		animation: fadeIn 1s ease-in-out infinite;
-		&:nth-of-type(1) {
-			animation-delay: .2s;
-		}
-		&:nth-of-type(2) {
-			animation-delay: .4s;
-		}
-		&:nth-of-type(3) {
-			animation-delay: .6s;
+.alt-left {
+	background-color: var(--clr-background-light);
+	color: var(--clr-font-light);
+	width: 40vw;
+	padding-right: 24px;
+
+	ul {
+		list-style:disc;
+		list-style-position: outside;
+		padding-left:32px;
+
+		li {
+			margin: 12px 0;
+			font-weight: 900;
 		}
 	}
 }
 
-@keyframes fadeIn {
-	from {opacity: 1;}
-	to {opacity: 0;}
+.alt-right {
+	// justify-content: none;
+	flex-direction: column;
+	// padding: 12px;
+	width: 20vw;
+
+	.banner img {
+		width: 17vw;
+	}
+
+	.auth0-container {
+		height: 7.5vh;
+		width: 95%;
+		background-color: var(--clr-background-light);
+		border-radius: 5px;
+	}
+
+	hr {
+		width: 98%;
+		// height: 1px;
+		background-color: var(--clr-background-light);
+	}
+
+	.fg-container {
+		flex-direction: column;
+
+		span {
+			font-weight: 999;
+			font-size: 1em;
+
+			&.fgl-text {
+				font-size: calc(100% * 4);
+			} 
+			
+		}
+	}
 }
